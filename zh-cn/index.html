@@ -1,0 +1,2242 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Hades' Star 维基">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#03DAC6"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<link rel="stylesheet" type="text/css" href="../lib/css/hsframe.css" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon-precomposed" href="../favicon.ico">
+<title>Hades' Star 帮助文档</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122593809-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122593809-3');
+</script>
+</head>
+<body class="wrapper">
+<section class="header">
+  <div class="headerlogo">Hades' Star 帮助文档</div>
+  <div class="headerinsert"></div>
+  <div class="headermenu" onclick="javascript:show('sidemenu')"></div>
+</section>
+<section id="hiddenlayer" onclick="javascript:hide()"></section>
+<section id="sidemenu">
+  <div class="sidelist">
+    <div class="sidemenutitle">快速索引</div>
+    <div class="sidemenublank">&emsp;</div>
+    <div class="sidemenulist" onClick="javascript:dshow0()">选择语言</div>
+    <div id="sidefolder0">
+      <div class="sidemenulist" onclick="window.open('https://wikihs.github.io/zh-cn/','_self')">简体中文</div>
+      <div class="sidemenulist" onclick="window.open('https://wikihs.github.io/zh-hk/','_self')">繁体中文（未上线）</div>
+    </div>
+    <div class="sidemenulist" onclick="javascrtpt:window.location.href='#intro'">简介</div>
+    <div class="sidemenulist" onclick="javascrtpt:window.location.href='#download'">下载</div>
+    <div class="sidemenulist" onClick="javascript:dshow1()">元素 +</div>
+    <div id="sidefolder1">
+      <div class="sidemenulist" onclick="javascript:dshow2()">神器 +</div>
+      <div id="sidefolder2">
+        <div class="sidemenulist" onclick="javascrtpt:window.location.href='#bluecrystals'">蓝水晶</div>
+        <div class="sidemenulist" onclick="javascrtpt:window.location.href='#orbs'">星珠</div>
+        <div class="sidemenulist" onclick="javascrtpt:window.location.href='#tetrahedrons'">四面体</div>
+        <div class="sidemenulist" onclick="javascrtpt:window.location.href='#blueprintsperartifact'">蓝图 / 神器</div>
+      </div>
+      <div class="sidemenulist" onclick="javascript:dshow3()">星球 +</div>
+      <div id="sidefolder3">
+        <div class="sidemenulist">升级费用</div>
+        <div class="sidemenulist" onclick="javascript:dshow4()">星球类型 +</div>
+        <div id="sidefolder4">
+          <div class="sidemenulist">沙漠星球</div>
+          <div class="sidemenulist">火焰星球</div>
+          <div class="sidemenulist">水类星球</div>
+          <div class="sidemenulist">类地星球</div>
+          <div class="sidemenulist">气体星球</div>
+          <div class="sidemenulist">寒冰星球</div>
+        </div>
+      </div>
+      <div class="sidemenulist" onclick="javascript:dshow5()">资源 +</div>
+      <div id="sidefolder5">
+        <div class="sidemenulist">星币</div>
+        <div class="sidemenulist">氢气</div>
+        <div class="sidemenulist">水晶</div>
+      </div>
+      <div class="sidemenulist" onclick="javascript:dshow6()">恒星 +</div>
+      <div id="sidefolder6">
+        <div class="sidemenulist">黄星</div>
+        <div class="sidemenulist">红巨星</div>
+        <div class="sidemenulist">白星</div>
+        <div class="sidemenulist">蓝星</div>
+      </div>
+      <div class="sidemenulist" onclick="javascript:dshow7()">舰船 +</div>
+      <div id="sidefolder7">
+        <div class="sidemenulist">运输舰</div>
+        <div class="sidemenulist">战斗舰</div>
+        <div class="sidemenulist">采矿舰</div>
+      </div>
+      <div class="sidemenulist" onclick="javascript:dshow8()">太空站 +</div>
+      <div id="sidefolder8">
+        <div class="sidemenulist">船坞</div>
+        <div class="sidemenulist">短距扫描仪</div>
+        <div class="sidemenulist">红巨星扫描仪</div>
+        <div class="sidemenulist">太空研究站</div>
+        <div class="sidemenulist">时间调制器</div>
+        <div class="sidemenulist">太空外交站</div>
+        <div class="sidemenulist">白星扫描仪</div>
+        <div class="sidemenulist">太空曲道枢纽</div>
+        <div class="sidemenulist">太空贸易站</div>
+        <div class="sidemenulist">货运中继</div>
+        <div class="sidemenulist">蓝星扫描仪</div>
+      </div>
+      <div class="sidemenulist" onclick="javascript:dshow9()">模组 +</div>
+      <div id="sidefolder9">
+        <div class="sidemenulist" onclick="javascript:dshow10()">交易 +</div>
+        <div id="sidefolder10">
+          <div class="sidemenulist" onclick="javascrtpt:window.location.href='#cargobayextension'">货舱拓展</div>
+          <div class="sidemenulist" onclick="javascrtpt:window.location.href='#shipmentcomputer'">货运计算机</div>
+          <div class="sidemenulist" onclick="javascrtpt:window.location.href='#tradeboost'">贸易增效</div>
+          <div class="sidemenulist" onclick="javascrtpt:window.location.href='#rush'">急速货运</div>
+          <div class="sidemenulist" onclick="javascrtpt:window.location.href='#tradeburst'">贸易爆发</div>
+          <div class="sidemenulist" onclick="javascrtpt:window.location.href='#shipmentdrone'">运输无人舰</div>
+          <div class="sidemenulist" onclick="javascrtpt:window.location.href='#offload'">卸货</div>
+          <div class="sidemenulist" onclick="javascrtpt:window.location.href='#shipmentbeam'">货运光束</div>
+          <div class="sidemenulist" onclick="javascrtpt:window.location.href='#entrust'">委任</div>
+          <div class="sidemenulist" onclick="javascrtpt:window.location.href='#recall'">立即召回</div>
+        </div>
+        <div class="sidemenulist" onclick="javascript:dshow11('sidefolder11')">采矿 +</div>
+        <div id="sidefolder11">
+          <div class="sidemenulist">采矿增速</div>
+          <div class="sidemenulist">氢气舱拓展</div>
+          <div class="sidemenulist">矿藏富集</div>
+          <div class="sidemenulist">远程采矿</div>
+          <div class="sidemenulist">氢气输送</div>
+          <div class="sidemenulist">协力采矿</div>
+          <div class="sidemenulist">矿物粉碎</div>
+          <div class="sidemenulist">创世纪</div>
+          <div class="sidemenulist">采矿无人舰</div>
+        </div>
+        <div class="sidemenulist" onclick="javascript:dshow12('sidefolder12')">武器 +</div>
+        <div id="sidefolder12">
+          <div class="sidemenulist">弱效火炮</div>
+          <div class="sidemenulist">火炮</div>
+          <div class="sidemenulist">激光</div>
+          <div class="sidemenulist">大型火炮</div>
+          <div class="sidemenulist">双重激光</div>
+          <div class="sidemenulist">密集弹幕</div>
+        </div>
+        <div class="sidemenulist" onclick="javascript:dshow13('sidefolder13')">护盾 +</div>
+        <div id="sidefolder13">
+          <div class="sidemenulist">阿尔法护盾</div>
+          <div class="sidemenulist">德尔塔护盾</div>
+          <div class="sidemenulist">被动护盾</div>
+          <div class="sidemenulist">奥米加护盾</div>
+          <div class="sidemenulist">反射护盾</div>
+          <div class="sidemenulist">防爆护盾</div>
+          <div class="sidemenulist">区域护盾</div>
+        </div>
+        <div class="sidemenulist" onclick="javascript:dshow14('sidefolder14')">支持 +</div>
+        <div id="sidefolder14">
+          <div class="sidemenulist">电磁脉冲</div>
+          <div class="sidemenulist">瞬间传送</div>
+          <div class="sidemenulist">红巨星生命延长</div>
+          <div class="sidemenulist">远程维修</div>
+          <div class="sidemenulist">时间扭曲</div>
+          <div class="sidemenulist">齐心协力</div>
+          <div class="sidemenulist">避难圣所</div>
+          <div class="sidemenulist">潜行</div>
+          <div class="sidemenulist">固若金汤</div>
+          <div class="sidemenulist">一时冲动</div>
+          <div class="sidemenulist">阿尔法导弹</div>
+          <div class="sidemenulist">回收利用</div>
+          <div class="sidemenulist">火力压制</div>
+          <div class="sidemenulist">命中注定</div>
+          <div class="sidemenulist">屏障</div>
+          <div class="sidemenulist">报仇雪恨</div>
+          <div class="sidemenulist">德尔塔火箭</div>
+          <div class="sidemenulist">信仰之跃</div>
+          <div class="sidemenulist">捆绑</div>
+          <div class="sidemenulist">阿尔法无人舰</div>
+          <div class="sidemenulist">奥米加火箭</div>
+        </div>
+      </div>
+      <div class="sidemenulist" onclick="javascript:dshow15('sidefolder15')">冥犬舰队 +</div>
+      <div id="sidefolder15">
+        <div class="sidemenulist">冥犬哨兵舰</div>
+        <div class="sidemenulist">冥犬护卫舰</div>
+        <div class="sidemenulist">冥犬截击舰</div>
+        <div class="sidemenulist">冥犬巨型舰</div>
+        <div class="sidemenulist">冥犬歼灭舰</div>
+        <div class="sidemenulist">冥犬轰炸舰</div>
+        <div class="sidemenulist">冥犬涅槃舰</div>
+        <div class="sidemenulist" onclick="javascript:dshow16('sidefolder16')">冥犬基地 +</div>
+        <div id="sidefolder16">
+          <div class="sidemenulist">脆弱冥犬基地</div>
+          <div class="sidemenulist">冥犬基地</div>
+          <div class="sidemenulist">强冥犬基地</div>
+        </div>
+      </div>
+    </div>
+    <div class="sidemenulist" onclick="javascript:dshow17('sidefolder17')">FAQ +</div>
+    <div id="sidefolder17">
+      <div class="sidemenulist">相关阅读</div>
+      <div class="sidemenulist">常见问题</div>
+      <div class="sidemenulist">游戏机制</div>
+    </div>
+    <div class="sidemenulist" onclick="javascrtpt:window.location.href='#news'">新闻</div>
+    <div class="sidemenulist" onclick="javascrtpt:window.location.href='#updates'">更新</div>
+    <div class="sidemenulist" onclick="javascrtpt:window.location.href='#links'">链接</div>
+  </div>
+</section>
+<section class="mainpage">
+  <div class="content">
+	<div class="nicenter">公告</div>
+    <div class="texts">维基仍处于开发状态，由于个人原因暂时停止更新。同时感谢 ValeraVvV 的帮助，急需查看游戏数据不妨通过 Google translate 查看他的网站<a href="http://guidehs-ru.1gb.ru/menu-en.html" class="linkstyle">GuideHS_web（en）</a>。<br>
+      点击右上角的菜单符号，通过快速索引到达所需页面。<br>
+	  <small>最近一次更新时间：2019/02/20</small></div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="intro"></div>
+    </div>
+    <div class="title">简介</div>
+    <div class="texts">Hades' Star 是一款独特的太空在线战略游戏。您在太空中拥有一个属于自己的角落，从单独一颗星球起步，控制一个不断壮大的帝国。随着时间流逝，您将不断拓张自己的疆域，坐拥数个哨站，掌控一支强大的舰队，研发先进的科技，参加各种任务，并处理与游戏中其他玩家的关系。 </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="download"></div>
+    </div>
+    <div class="title">下载</div>
+    <div class="texts">注意：非下列途径下载的 Hades' Star 可能包含病毒/包含广告弹出/非最新版。<br>
+      <a href="https://itunes.apple.com/cn/app/hades-star/id1058502954" class="linkstyle"> 在 App Store 下载 </a><br>
+      <a href="http://play.google.com/store/apps/details?id=com.ParallelSpace.Cerberus" class="linkstyle"> 在 Play 商店下载 </a><br>
+      即将登陆 Steam</div>
+  </div>
+  <div class="nicenter">神器</div>
+  <div class="content">
+    <duv class="texts">神器可以从在红星系统中濒死的星球上获得。所有的神器都可以在太空研究站进行研究或者分解，并且都含有一定数量的星币，氢气，经验值和蓝图。共有三种类型的神器：蓝水晶，星珠和四面体，每种神器对应着一种具体类型的蓝图。蓝水晶含有交易和采矿科技，星珠含有武器和护盾科技，四面体含有支持科技。</duv>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="bluecrystals"></div>
+    </div>
+    <div class="title">蓝水晶</div>
+    <div class="texts">蓝水晶内有交易模组蓝图和采矿模组蓝图。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>重量</td>
+            <td>装载时间</td>
+            <td>研究时间</td>
+            <td>经验值</td>
+            <td>研究获得星币</td>
+            <td>研究获得氢气</td>
+            <td>分解获得星币</td>
+            <td>分解获得氢气</td>
+            <td>水晶购买价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1吨</td>
+            <td>20秒</td>
+            <td>2时</td>
+            <td>100</td>
+            <td>500 - 700</td>
+            <td>100 - 140</td>
+            <td>190</td>
+            <td>44</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2吨</td>
+            <td>40秒</td>
+            <td>2时</td>
+            <td>250</td>
+            <td>1 400 - 2 000</td>
+            <td>220 - 280</td>
+            <td>400</td>
+            <td>50</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>4吨</td>
+            <td>1分</td>
+            <td>2时30分</td>
+            <td>500</td>
+            <td>2 000 - 2 800</td>
+            <td>280 - 400</td>
+            <td>800</td>
+            <td>68</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>4吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>750</td>
+            <td>3 000 - 3 500</td>
+            <td>400 - 800</td>
+            <td>1 200</td>
+            <td>120</td>
+            <td>400</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>6吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>1 000</td>
+            <td>3 400 - 4 000</td>
+            <td>800 - 1 600</td>
+            <td>1 600</td>
+            <td>240</td>
+            <td>800</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>8吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>1 250</td>
+            <td>3 800 - 4 400</td>
+            <td>1 600 - 2 400</td>
+            <td>2 000</td>
+            <td>400</td>
+            <td>1 400</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>10吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>1 500</td>
+            <td>4 200 - 5 000</td>
+            <td>2 800 - 3 500</td>
+            <td>2 400</td>
+            <td>700</td>
+            <td>2 000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>12吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>1 500</td>
+            <td>5 000 - 6 200</td>
+            <td>3 500 - 5 000</td>
+            <td>3 000</td>
+            <td>900</td>
+            <td>2 600</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>15吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>2 500</td>
+            <td>6 500 - 8 000</td>
+            <td>4 200 - 7 000</td>
+            <td>3 500</td>
+            <td>1 200</td>
+            <td>2 800</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="orbs"></div>
+    </div>
+    <div class="title">星珠</div>
+    <div class="texts">星珠内有武器模组蓝图和护盾模组蓝图。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>重量</td>
+            <td>装载时间</td>
+            <td>研究时间</td>
+            <td>经验值</td>
+            <td>研究获得星币</td>
+            <td>研究获得氢气</td>
+            <td>分解获得星币</td>
+            <td>分解获得氢气</td>
+            <td>水晶购买价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1吨</td>
+            <td>20秒</td>
+            <td>2时</td>
+            <td>100</td>
+            <td>500 - 700</td>
+            <td>100 - 140</td>
+            <td>160</td>
+            <td>44</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2吨 </td>
+            <td>40秒</td>
+            <td>2时</td>
+            <td>250</td>
+            <td>1 400 - 2 000</td>
+            <td>220 - 280</td>
+            <td>400</td>
+            <td>50</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>4吨</td>
+            <td>1分</td>
+            <td>2时30分</td>
+            <td>500</td>
+            <td>2 000 - 2 800</td>
+            <td>280 - 400</td>
+            <td>800</td>
+            <td>68</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>4吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>750</td>
+            <td>3 000 - 3 500</td>
+            <td>400 - 800</td>
+            <td>1 200</td>
+            <td>120</td>
+            <td>400</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>6吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>1 000</td>
+            <td>3 400 - 4 000</td>
+            <td>800 - 1 600</td>
+            <td>1 600</td>
+            <td>240</td>
+            <td>800</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>8吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>1 250</td>
+            <td>3 800 - 4 400</td>
+            <td>1 600 - 2 400</td>
+            <td>2 000</td>
+            <td>400</td>
+            <td>1 400</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>10吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>1 500</td>
+            <td>4 200 - 5 000</td>
+            <td>2 800 - 3 500</td>
+            <td>2 400</td>
+            <td>700</td>
+            <td>2 000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>12吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>2 500</td>
+            <td>5 000 - 6 200</td>
+            <td>3 500 - 5 000</td>
+            <td>3 000</td>
+            <td>900</td>
+            <td>2 600</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>15吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>2 500</td>
+            <td>6 500 - 8 000</td>
+            <td>4 200 - 7 000</td>
+            <td>3 500</td>
+            <td>1 200</td>
+            <td>2 800</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="tetrahedrons"></div>
+    </div>
+    <div class="title">四面体</div>
+    <div class="texts">四面体内有支持模组蓝图。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>重量</td>
+            <td>装载时间</td>
+            <td>研究时间</td>
+            <td>经验值</td>
+            <td>研究获得星币</td>
+            <td>研究获得氢气</td>
+            <td>分解获得星币</td>
+            <td>分解获得氢气</td>
+            <td>水晶购买价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2吨</td>
+            <td>40秒</td>
+            <td>2时</td>
+            <td>250</td>
+            <td>1 400 - 2 000</td>
+            <td>220 - 280</td>
+            <td>400</td>
+            <td>50</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>4吨</td>
+            <td>1分</td>
+            <td>2时30分</td>
+            <td>500</td>
+            <td>2 000 - 2 800</td>
+            <td>280 - 400</td>
+            <td>800</td>
+            <td>68</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>4吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>750</td>
+            <td>3 000 - 3 500</td>
+            <td>400 - 800</td>
+            <td>1 200</td>
+            <td>120</td>
+            <td>400</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>6吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>1 000</td>
+            <td>3 400 - 4 000</td>
+            <td>800 - 1 600</td>
+            <td>1 600</td>
+            <td>240</td>
+            <td>800</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>8吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>1 250</td>
+            <td>3 800 - 4 400</td>
+            <td>1 600 - 2 400</td>
+            <td>2 000</td>
+            <td>400</td>
+            <td>1 400</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>10吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>1 500</td>
+            <td>4 200 - 5 000</td>
+            <td>2 400 - 3 000</td>
+            <td>2 400</td>
+            <td>540</td>
+            <td>2 000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>12吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>2 000</td>
+            <td>5 500 - 7 000</td>
+            <td>3 000 - 5 000</td>
+            <td>3 000</td>
+            <td>750</td>
+            <td>2 500</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>15吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>2 500</td>
+            <td>6 500 - 8 000</td>
+            <td>4 200 - 7 000</td>
+            <td>3 500</td>
+            <td>1 200</td>
+            <td>2 800</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>18吨</td>
+            <td>1分</td>
+            <td>3时</td>
+            <td>3 000</td>
+            <td>10 000 - 14 000</td>
+            <td>7 000 - 12 000</td>
+            <td>4 000</td>
+            <td>1 500</td>
+            <td>3 000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="blueprintsperartifact"></div>
+    </div>
+    <div class="title">每个神器所含蓝图</div>
+    <div class="texts">四面体内有支持模组蓝图。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>神器等级</td>
+            <td>等级1蓝图</td>
+            <td>等级2蓝图</td>
+            <td>等级3蓝图</td>
+            <td>等级4蓝图</td>
+            <td>等级5蓝图</td>
+            <td>等级6蓝图</td>
+            <td>等级7蓝图</td>
+            <td>等级8蓝图</td>
+            <td>等级9蓝图</td>
+            <td>等级10蓝图</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1 - 3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>4 - 6</td>
+            <td>1 - 3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>8 - 20</td>
+            <td>4 - 6</td>
+            <td>0 - 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>25 - 60</td>
+            <td>8 - 20</td>
+            <td>4 - 6</td>
+            <td>0 - 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>60 - 120</td>
+            <td>25 - 60</td>
+            <td>8 - 20</td>
+            <td>4 - 6</td>
+            <td>0 - 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>25 - 60</td>
+            <td>8 - 20</td>
+            <td>4 - 6</td>
+            <td>0 - 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>25 - 60</td>
+            <td>8 - 20</td>
+            <td>4 - 6</td>
+            <td>0 - 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>25 - 60</td>
+            <td>8 - 20</td>
+            <td>4 - 6</td>
+            <td>0 - 2</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>25 - 60</td>
+            <td>5 - 15</td>
+            <td>1 - 3</td>
+            <td>0 - 2</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>60 - 120</td>
+            <td>25 - 60</td>
+            <td>8 - 20</td>
+            <td>2 - 3</td>
+            <td>1</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="nicenter">星球</div>
+  <div class="content">
+    <div class="texts">星球指的是在玩家黄星系统中被发现的宜居星球。在红巨星和白星周围的是濒死的星球。星球可被殖民来生成星币和氢气收入，并且根据星球类型有规律地生成货物。<br>
+      神器可以被存储在星球上，并且无论重量多少只占一个位置。星球可以存储自身容量两倍的神器，然而存储了神器的星球无法生成货物。升级星球可以增加你的经验值。<br>
+      注意：当一个星球存储的货物达到其容量上限，每次货物生成时，旧货物会被新货物替换。</div>
+  </div>
+  <div class="nicenter">模组</div>
+  <div class="content">
+    <div class="baseline">
+      <div id="cargobayextension"></div>
+    </div>
+    <div class="lrholder">
+      <div class="lpic"> <img src="../lib/img/cargobayextension.svg" width="50px" alt="cargobayextension"/> </div>
+      <div class="rintro">
+        <div class="title">货舱拓展</div>
+      </div>
+    </div>
+    <div class="texts">增加运输舰的总存储空间，允许一次搭载更多货物或神器。<br>
+      该模组为被动模组，研究更多的等级1蓝水晶即有机会发现该模组。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>需要蓝图</td>
+            <td>解锁价格</td>
+            <td>研究时间</td>
+            <td>额外栏位</td>
+            <td>额外氢气使用</td>
+            <td>安装价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1 000</td>
+            <td>5分</td>
+            <td>1</td>
+            <td>2.0/100天文单位</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>5</td>
+            <td>5 000</td>
+            <td>4时</td>
+            <td>2</td>
+            <td>5.0/100天文单位</td>
+            <td>750</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>50</td>
+            <td>25 000</td>
+            <td>12时</td>
+            <td>3</td>
+            <td>8.0/100天文单位</td>
+            <td>1 000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>150</td>
+            <td>50 000</td>
+            <td>1日</td>
+            <td>5</td>
+            <td>12.0/100天文单位</td>
+            <td>1 500</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>500</td>
+            <td>100 000</td>
+            <td>2日</td>
+            <td>7</td>
+            <td>17.0/100天文单位</td>
+            <td>2 500</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>2 000</td>
+            <td>250 000</td>
+            <td>3日</td>
+            <td>9</td>
+            <td>22.0/100天文单位</td>
+            <td>5 000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>6 000</td>
+            <td>500 000</td>
+            <td>4日</td>
+            <td>12</td>
+            <td>28.0/100天文单位</td>
+            <td>10 000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>12 000</td>
+            <td>1 000 000</td>
+            <td>5日</td>
+            <td>15</td>
+            <td>34.0/100天文单位</td>
+            <td>20 000</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>25 000</td>
+            <td>2 000 000</td>
+            <td>6日</td>
+            <td>18</td>
+            <td>40.0/100天文单位</td>
+            <td>35 000</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>40 000</td>
+            <td>4 000 000</td>
+            <td>7日</td>
+            <td>22</td>
+            <td>48.0/100天文单位</td>
+            <td>50 000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="shipmentcomputer"></div>
+    </div>
+    <div class="lrholder">
+      <div class="lpic"> <img src="../lib/img/shipmentcomputer.svg" width="50px" alt="shipmentcomputer"/> </div>
+      <div class="rintro">
+        <div class="title">货运计算机</div>
+      </div>
+    </div>
+    <div class="texts">如果有货运目的地处于后续路径点上，飞船将自动搭载此类中间路径点的货物。自动搭载的货物会获得额外奖励。<br>
+      解锁该模组后，点击任何存有货物的物体将可看到数字标识，显示货物运送目的地。<br>
+      该模组为被动模组，研究更多的等级2蓝水晶即有机会发现该模组。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>需要蓝图</td>
+            <td>解锁价格</td>
+            <td>研究时间</td>
+            <td>额外奖励</td>
+            <td>额外氢气使用</td>
+            <td>安装价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>8 000</td>
+            <td>4时</td>
+            <td>8%</td>
+            <td>0.8/100天文单位</td>
+            <td>1 000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>25</td>
+            <td>12 000</td>
+            <td>8时</td>
+            <td>10%</td>
+            <td>2.0/100天文单位</td>
+            <td>1 500</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>150</td>
+            <td>25 000</td>
+            <td>1日</td>
+            <td>12%</td>
+            <td>3.2/100天文单位</td>
+            <td>2 000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>600</td>
+            <td>50 000</td>
+            <td>2日</td>
+            <td>14%</td>
+            <td>4.6/100天文单位</td>
+            <td>3 000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>1 200</td>
+            <td>100 000</td>
+            <td>3日</td>
+            <td>16%</td>
+            <td>5.6/100天文单位</td>
+            <td>5 000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>3 000</td>
+            <td>250 000</td>
+            <td>4日</td>
+            <td>18%</td>
+            <td>6.8/100天文单位</td>
+            <td>7 500</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>6 000</td>
+            <td>500 000</td>
+            <td>5日</td>
+            <td>20%</td>
+            <td>8.0/100天文单位</td>
+            <td>10 000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>10 000</td>
+            <td>1 000 000</td>
+            <td>6日</td>
+            <td>22%</td>
+            <td>9.4/100天文单位</td>
+            <td>12 500</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>15 000</td>
+            <td>2 000 000</td>
+            <td>7日</td>
+            <td>24%</td>
+            <td>10.8/100天文单位</td>
+            <td>15 000</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>20 000</td>
+            <td>4 000 000</td>
+            <td>8日</td>
+            <td>26%</td>
+            <td>12.2/100天文单位</td>
+            <td>17 500</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="tradeboost"></div>
+    </div>
+    <div class="lrholder">
+      <div class="lpic"> <img src="../lib/img/tradeboost.svg" width="50px" alt="tradeboost"/> </div>
+      <div class="rintro">
+        <div class="title">贸易增效</div>
+      </div>
+    </div>
+    <div class="texts">激活时增加货运奖励。<br>
+      该模组为主动模组，研究更多的等级3蓝水晶即有机会发现该模组。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>需要蓝图</td>
+            <td>解锁价格</td>
+            <td>研究时间</td>
+            <td>效果时长</td>
+            <td>冷却</td>
+            <td>货物额外奖励</td>
+            <td>激活成本</td>
+            <td>安装价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>15 000</td>
+            <td>8时</td>
+            <td>10分</td>
+            <td>23时</td>
+            <td>+6%</td>
+            <td>50</td>
+            <td>1 000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>50</td>
+            <td>25 000</td>
+            <td>16时</td>
+            <td>10分</td>
+            <td>23时</td>
+            <td>+8%</td>
+            <td>60</td>
+            <td>1 100</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>200</td>
+            <td>50 000</td>
+            <td>1日</td>
+            <td>10分</td>
+            <td>23时</td>
+            <td>+10%</td>
+            <td>72</td>
+            <td>1 200</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>600</td>
+            <td>100 000</td>
+            <td>2日</td>
+            <td>10分</td>
+            <td>23时</td>
+            <td>+12%</td>
+            <td>86</td>
+            <td>1 300</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>1 500</td>
+            <td>200 000</td>
+            <td>3日</td>
+            <td>10分</td>
+            <td>23时</td>
+            <td>+14%</td>
+            <td>103</td>
+            <td>1 400</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>4 000</td>
+            <td>350 000</td>
+            <td>4日</td>
+            <td>10分</td>
+            <td>23时</td>
+            <td>+16%</td>
+            <td>123</td>
+            <td>1 500</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>10 000</td>
+            <td>550 000</td>
+            <td>5日</td>
+            <td>10分</td>
+            <td>23时</td>
+            <td>+18%</td>
+            <td>147</td>
+            <td>1 600</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>20 000</td>
+            <td>800 000</td>
+            <td>6日</td>
+            <td>10分</td>
+            <td>23时</td>
+            <td>+20%</td>
+            <td>176</td>
+            <td>1 700</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>30 000</td>
+            <td>2 000 000</td>
+            <td>7日</td>
+            <td>10分</td>
+            <td>23时</td>
+            <td>+22%</td>
+            <td>211</td>
+            <td>1 800</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>40 000</td>
+            <td>5 000 000</td>
+            <td>7日</td>
+            <td>10分</td>
+            <td>23时</td>
+            <td>+24%</td>
+            <td>250</td>
+            <td>1 900</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="rush"></div>
+    </div>
+    <div class="lrholder">
+      <div class="lpic"> <img src="../lib/img/rush.svg" width="50px" alt="rush.svg"/> </div>
+      <div class="rintro">
+        <div class="title">急速货运</div>
+      </div>
+    </div>
+    <div class="texts">当运输舰搭载任何目的地为下一个路径点的货物时，增加运输舰的速度。增速与目的地为下一个路径点的货物数量成正比。<br>
+      该模组为被动模组，研究更多的等级3蓝水晶即有机会发现该模组。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>需要蓝图</td>
+            <td>解锁价格</td>
+            <td>研究时间</td>
+            <td>速度提高</td>
+            <td>额外氢气使用</td>
+            <td>安装价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>15 000</td>
+            <td>8时</td>
+            <td>6%</td>
+            <td>0.8/100天文单位</td>
+            <td>2 000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>50</td>
+            <td>25 000</td>
+            <td>16时</td>
+            <td>10%</td>
+            <td>2.0/100天文单位</td>
+            <td>4 000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>200</td>
+            <td>50 000</td>
+            <td>1日</td>
+            <td>14%</td>
+            <td>3.2/100天文单位</td>
+            <td>6 000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>600</td>
+            <td>100 000</td>
+            <td>2日</td>
+            <td>18%</td>
+            <td>4.6/100天文单位</td>
+            <td>8 000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>1 500</td>
+            <td>200 000</td>
+            <td>3日</td>
+            <td>20%</td>
+            <td>5.6/100天文单位</td>
+            <td>10 000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>4 000</td>
+            <td>350 000</td>
+            <td>4日</td>
+            <td>24%</td>
+            <td>6.8/100天文单位</td>
+            <td>12 000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>10 000</td>
+            <td>550 000</td>
+            <td>5日</td>
+            <td>28%</td>
+            <td>8.0/100天文单位</td>
+            <td>14 000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>20 000</td>
+            <td>800 000</td>
+            <td>6日</td>
+            <td>32%</td>
+            <td>9.4/100天文单位</td>
+            <td>16 000</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>30 000</td>
+            <td>2 000 000</td>
+            <td>7日</td>
+            <td>36%</td>
+            <td>10.8/100天文单位</td>
+            <td>18 000</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>40 000</td>
+            <td>5 000 000</td>
+            <td>7日</td>
+            <td>40%</td>
+            <td>12.2/100天文单位</td>
+            <td>20 000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="tradeburst"></div>
+    </div>
+    <div class="lrholder">
+      <div class="lpic"> <img src="../lib/img/tradeburst.svg" width="50px" alt="tradeburst"/> </div>
+      <div class="rintro">
+        <div class="title">贸易爆发</div>
+      </div>
+    </div>
+    <div class="texts">在激活期间对货运量进行计数，货运量达到最低阈值后，在模组依旧激活期间，搭载船舰运送的每批新货物都会获得额外的星币奖励。<br>
+      该模组为主动模组，研究更多的等级4蓝水晶即有机会发现该模组。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>需要蓝图</td>
+            <td>解锁价格</td>
+            <td>研究时间</td>
+            <td>阈值</td>
+            <td>额外奖励</td>
+            <td>效果时长</td>
+            <td>冷却</td>
+            <td>激活成本</td>
+            <td>安装价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>20 000</td>
+            <td>1日</td>
+            <td>12</td>
+            <td>20%</td>
+            <td>20分</td>
+            <td>23时</td>
+            <td>250</td>
+            <td>5 000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10</td>
+            <td>35 000</td>
+            <td>2日</td>
+            <td>13</td>
+            <td>22%</td>
+            <td>20分</td>
+            <td>23时</td>
+            <td>300</td>
+            <td>6 000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>25</td>
+            <td>65 000</td>
+            <td>3日</td>
+            <td>14</td>
+            <td>24%</td>
+            <td>20分</td>
+            <td>23时</td>
+            <td>350</td>
+            <td>7 000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>50</td>
+            <td>100 000</td>
+            <td>4日</td>
+            <td>15</td>
+            <td>26%</td>
+            <td>20分</td>
+            <td>23时</td>
+            <td>400</td>
+            <td>8 000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>200</td>
+            <td>200 000</td>
+            <td>5日</td>
+            <td>16</td>
+            <td>28%</td>
+            <td>20分</td>
+            <td>23时</td>
+            <td>500</td>
+            <td>9 000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>600</td>
+            <td>350 000</td>
+            <td>6日</td>
+            <td>17</td>
+            <td>30%</td>
+            <td>20分</td>
+            <td>23时</td>
+            <td>600</td>
+            <td>10 000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>1 500</td>
+            <td>700 000</td>
+            <td>7日</td>
+            <td>18</td>
+            <td>32%</td>
+            <td>20分</td>
+            <td>23时</td>
+            <td>700</td>
+            <td>11 000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>4 000</td>
+            <td>1 000 000</td>
+            <td>8日</td>
+            <td>19</td>
+            <td>34%</td>
+            <td>20分</td>
+            <td>23时</td>
+            <td>800</td>
+            <td>12 000</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>10 000</td>
+            <td>2 500 000</td>
+            <td>9日</td>
+            <td>20</td>
+            <td>36%</td>
+            <td>20分</td>
+            <td>23时</td>
+            <td>900</td>
+            <td>13 000</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>20 000</td>
+            <td>5 000 000</td>
+            <td>10日</td>
+            <td>21</td>
+            <td>38%</td>
+            <td>20分</td>
+            <td>23时</td>
+            <td>1 000</td>
+            <td>14 000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="shipmentdrone"></div>
+    </div>
+    <div class="lrholder">
+      <div class="lpic"> <img src="../lib/img/shipmentdrone.svg" width="50px" alt="shipmentdrone"/> </div>
+      <div class="rintro">
+        <div class="title">运输无人舰</div>
+      </div>
+    </div>
+    <div class="texts">发射一艘无人舰，自动在可能的时候搭载并运送货物。无人舰只能在激活的太空曲道所连接的星区之间航行。<br>
+      无人舰一次只能运送货物至单一目的地。如果无人舰卸下一个以上的货物，整次货运将产生额外的星币加成，加成量与运送的额外货物数量成正比。<br>
+      该模组为主动模组，研究更多的等级5蓝水晶即有机会发现该模组。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>需要蓝图</td>
+            <td>解锁价格</td>
+            <td>研究时间</td>
+            <td>货物栏位总量</td>
+            <td>每个额外货物奖励</td>
+            <td>速度</td>
+            <td>寿命</td>
+            <td>冷却</td>
+            <td>激活成本</td>
+            <td>安装价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>150 000</td>
+            <td>1日</td>
+            <td>4</td>
+            <td>3%</td>
+            <td>1320天文单位/分</td>
+            <td>1时</td>
+            <td>1时</td>
+            <td>500</td>
+            <td>25 000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>20</td>
+            <td>200 000</td>
+            <td>2日</td>
+            <td>5</td>
+            <td>5%</td>
+            <td>1320天文单位/分</td>
+            <td>1时</td>
+            <td>1时</td>
+            <td>1 000</td>
+            <td>30 000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>50</td>
+            <td>350 000</td>
+            <td>3日</td>
+            <td>5</td>
+            <td>7%</td>
+            <td>1320天文单位/分</td>
+            <td>1时</td>
+            <td>1时</td>
+            <td>1 500</td>
+            <td>35 000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>100</td>
+            <td>500 000</td>
+            <td>4日</td>
+            <td>6</td>
+            <td>8%</td>
+            <td>1320天文单位/分</td>
+            <td>1时</td>
+            <td>1时</td>
+            <td>2 000</td>
+            <td>40 000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>200</td>
+            <td>750 000</td>
+            <td>5日</td>
+            <td>6</td>
+            <td>9%</td>
+            <td>1320天文单位/分</td>
+            <td>1时</td>
+            <td>1时</td>
+            <td>3 000</td>
+            <td>45 000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>500</td>
+            <td>1 000 000</td>
+            <td>6日</td>
+            <td>7</td>
+            <td>10%</td>
+            <td>1320天文单位/分</td>
+            <td>1时</td>
+            <td>1时</td>
+            <td>4 000</td>
+            <td>50 000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>1 500</td>
+            <td>2 000 000</td>
+            <td>7日</td>
+            <td>7</td>
+            <td>12%</td>
+            <td>1320天文单位/分</td>
+            <td>1时</td>
+            <td>1时</td>
+            <td>5 000</td>
+            <td>55 000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>4 000</td>
+            <td>3 000 000</td>
+            <td>7日</td>
+            <td>7</td>
+            <td>14%</td>
+            <td>1320天文单位/分</td>
+            <td>1时</td>
+            <td>1时</td>
+            <td>7 500</td>
+            <td>60 000</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>8 000</td>
+            <td>5 000 000</td>
+            <td>7日</td>
+            <td>8</td>
+            <td>15%</td>
+            <td>1320天文单位/分</td>
+            <td>1时</td>
+            <td>1时</td>
+            <td>10 000</td>
+            <td>65 000</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>16 000</td>
+            <td>8 000 000</td>
+            <td>7日</td>
+            <td>9</td>
+            <td>16%</td>
+            <td>1320天文单位/分</td>
+            <td>1时</td>
+            <td>1时</td>
+            <td>15 000</td>
+            <td>70 000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="offload"></div>
+    </div>
+    <div class="lrholder">
+      <div class="lpic"> <img src="../lib/img/offload.svg" width="50px" alt="offload"/> </div>
+      <div class="rintro">
+        <div class="title">卸货</div>
+      </div>
+    </div>
+    <div class="texts">模组激活时，无论货物实际目的地在哪里，运输舰都会在到达太空贸易站时卸载所有货物。原始目的地不为太空贸易站的货物会获得更少的奖励。<br>
+      该模组为主动模组，研究更多的等级5蓝水晶即有机会发现该模组。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>需要蓝图</td>
+            <td>解锁价格</td>
+            <td>研究时间</td>
+            <td>奖励</td>
+            <td>效果时长</td>
+            <td>冷却</td>
+            <td>激活成本</td>
+            <td>安装价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>100 000</td>
+            <td>2日</td>
+            <td>50%</td>
+            <td>20分</td>
+            <td>20分</td>
+            <td>400</td>
+            <td>10 000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10</td>
+            <td>120 000</td>
+            <td>3日</td>
+            <td>55%</td>
+            <td>20分</td>
+            <td>20分</td>
+            <td>450</td>
+            <td>12 000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>25</td>
+            <td>140 000</td>
+            <td>4日</td>
+            <td>60%</td>
+            <td>20分</td>
+            <td>20分</td>
+            <td>500</td>
+            <td>14 000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>50</td>
+            <td>160 000</td>
+            <td>5日</td>
+            <td>65%</td>
+            <td>20分</td>
+            <td>20分</td>
+            <td>550</td>
+            <td>16 000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>200</td>
+            <td>180 000</td>
+            <td>6日</td>
+            <td>70%</td>
+            <td>20分</td>
+            <td>20分</td>
+            <td>600</td>
+            <td>18 000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>600</td>
+            <td>200 000</td>
+            <td>7日</td>
+            <td>75%</td>
+            <td>20分</td>
+            <td>20分</td>
+            <td>700</td>
+            <td>20 000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>1 500</td>
+            <td>250 000</td>
+            <td>8日</td>
+            <td>80%</td>
+            <td>20分</td>
+            <td>20分</td>
+            <td>800</td>
+            <td>22 000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>4 000</td>
+            <td>300 000</td>
+            <td>9日</td>
+            <td>85%</td>
+            <td>20分</td>
+            <td>20分</td>
+            <td>900</td>
+            <td>24 000</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>10 000</td>
+            <td>400 000</td>
+            <td>10日</td>
+            <td>90%</td>
+            <td>20分</td>
+            <td>20分</td>
+            <td>1 000</td>
+            <td>26 000</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>20 000</td>
+            <td>500 000</td>
+            <td>10日</td>
+            <td>95%</td>
+            <td>20分</td>
+            <td>20分</td>
+            <td>1 100</td>
+            <td>28 000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="shipmentbeam"></div>
+    </div>
+    <div class="lrholder">
+      <div class="lpic"> <img src="../lib/img/shipmentbeam.svg" width="50px" alt="shipmentbeam"/> </div>
+      <div class="rintro">
+        <div class="title">货运光束</div>
+      </div>
+    </div>
+    <div class="texts">从恒星系统的任何目标哨站处，立刻装载价值最低的货物。对于神器或圣物不可用。<br>
+      该模组为主动模组，研究更多的等级6蓝水晶即有机会发现该模组。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>需要蓝图</td>
+            <td>解锁价格</td>
+            <td>研究时间</td>
+            <td>最大货物数量</td>
+            <td>冷却</td>
+            <td>激活成本</td>
+            <td>安装价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>80 000</td>
+            <td>1日</td>
+            <td>4</td>
+            <td>5分</td>
+            <td>200</td>
+            <td>2 000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10</td>
+            <td>100 000</td>
+            <td>2日</td>
+            <td>6</td>
+            <td>5分</td>
+            <td>300</td>
+            <td>4 000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>25</td>
+            <td>120 000</td>
+            <td>3日</td>
+            <td>8</td>
+            <td>5分</td>
+            <td>400</td>
+            <td>8 000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>50</td>
+            <td>140 000</td>
+            <td>4日</td>
+            <td>10</td>
+            <td>5分</td>
+            <td>500</td>
+            <td>12 000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>100</td>
+            <td>160 000</td>
+            <td>5日</td>
+            <td>12</td>
+            <td>5分</td>
+            <td>600</td>
+            <td>16 000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>250</td>
+            <td>180 000</td>
+            <td>6日</td>
+            <td>14</td>
+            <td>5分</td>
+            <td>700</td>
+            <td>20 000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>600</td>
+            <td>250 000</td>
+            <td>7日</td>
+            <td>16</td>
+            <td>5分</td>
+            <td>800</td>
+            <td>25 000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>1 200</td>
+            <td>300 000</td>
+            <td>7日</td>
+            <td>18</td>
+            <td>5分</td>
+            <td>900</td>
+            <td>30 000</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>2 500</td>
+            <td>350 000</td>
+            <td>7日</td>
+            <td>20</td>
+            <td>5分</td>
+            <td>1 000</td>
+            <td>35 000</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>5 000</td>
+            <td>400 000</td>
+            <td>7日</td>
+            <td>22</td>
+            <td>5分</td>
+            <td>1 100</td>
+            <td>40 000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="entrust"></div>
+    </div>
+    <div class="lrholder">
+      <div class="lpic"> <img src="../lib/img/entrust.svg" width="50px" alt="entrust"/> </div>
+      <div class="rintro">
+        <div class="title">委任</div>
+      </div>
+    </div>
+    <div class="texts">允许搭载运输舰将其货物瞬间移动到范围内的另一艘运输舰上。对货物、完全装载完毕的神器和圣物可用。<br>
+      该模组为主动模组，研究更多的等级6蓝水晶即有机会发现该模组。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>需要蓝图</td>
+            <td>解锁价格</td>
+            <td>研究时间</td>
+            <td>激活成本</td>
+            <td>效果范围</td>
+            <td>冷却（红星）</td>
+            <td>冷却（白星）</td>
+            <td>安装价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>100 000</td>
+            <td>2日</td>
+            <td>400</td>
+            <td>320</td>
+            <td>10分</td>
+            <td>4日4时</td>
+            <td>20 000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10</td>
+            <td>160 000</td>
+            <td>3日</td>
+            <td>450</td>
+            <td>346</td>
+            <td>10分</td>
+            <td>4日4时</td>
+            <td>22 000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>25</td>
+            <td>250 000</td>
+            <td>4日</td>
+            <td>500</td>
+            <td>373</td>
+            <td>10分</td>
+            <td>4日4时</td>
+            <td>24 000</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>50</td>
+            <td>400 000</td>
+            <td>5日</td>
+            <td>600</td>
+            <td>403</td>
+            <td>10分</td>
+            <td>4日4时</td>
+            <td>26 000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>200</td>
+            <td>650 000</td>
+            <td>6日</td>
+            <td>700</td>
+            <td>436</td>
+            <td>10分</td>
+            <td>4日4时</td>
+            <td>28 000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>600</td>
+            <td>1 000 000</td>
+            <td>7日</td>
+            <td>800</td>
+            <td>468</td>
+            <td>10分</td>
+            <td>4日4时</td>
+            <td>30 000</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>1 500</td>
+            <td>1 500 000</td>
+            <td>8日</td>
+            <td>900</td>
+            <td>508</td>
+            <td>10分</td>
+            <td>4日4时</td>
+            <td>32 000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>4 000</td>
+            <td>2 500 000</td>
+            <td>9日</td>
+            <td>1 000</td>
+            <td>548</td>
+            <td>10分</td>
+            <td>4日4时</td>
+            <td>34 000</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>10 000</td>
+            <td>4 000 000</td>
+            <td>10日</td>
+            <td>1 200</td>
+            <td>592</td>
+            <td>10分</td>
+            <td>4日4时</td>
+            <td>36 000</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>20 000</td>
+            <td>6 000 000</td>
+            <td>10日</td>
+            <td>1 400</td>
+            <td>640</td>
+            <td>10分</td>
+            <td>4日4时</td>
+            <td>38 000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="baseline">
+      <div id="recall"></div>
+    </div>
+    <div class="lrholder">
+      <div class="lpic"> <img src="../lib/img/recall.svg" width="50px" alt="recall"/> </div>
+      <div class="rintro">
+        <div class="title">立即召回</div>
+      </div>
+    </div>
+    <div class="texts">允许运输舰在当前恒星系统中瞬间传送至任何太空贸易站<br>
+      该模组为主动模组，研究更多的等级7蓝水晶即有机会发现该模组。</div>
+    <div class="slide-box">
+      <div class="slide-item">
+        <table border="1" bordercolor="#F0F0F0" cellpadding="5em" cellspacing="5em" class="table">
+          <tr>
+            <td>等级</td>
+            <td>需要蓝图</td>
+            <td>解锁价格</td>
+            <td>研究时间</td>
+            <td>冷却</td>
+            <td>激活成本</td>
+            <td>安装价格</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>150 000</td>
+            <td>2日</td>
+            <td>1分</td>
+            <td>500</td>
+            <td>20 000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- News -->
+  <div class="content">
+    <div class="baseline">
+      <div id="news"></div>
+    </div>
+    <div class="title">新闻</div>
+    <div class="nicenter"> Steam 版本</div>
+    <div class="texts"> Hades' Star 即将登陆 PC 和 Mac 版 Steam！<br>
+      您将能够从任何支持的平台访问您当前的游戏。<br>
+      <a href="https://store.steampowered.com/app/755800/Hades_Star/" class="linkstyle">将游戏添加到您的 Steam 愿望单</a><br>
+      并加入我们的 Steam 社区，在游戏发布时得到通知！</div>
+  </div>
+  <!-- Updates -->
+  <div class="content">
+    <div class="baseline">
+      <div id="updates"></div>
+    </div>
+    <div class="title">更新</div>
+    <div class="nicenter">版本 2.201.0 </div>
+    <div class="texts">欢迎来到激动人心的全新蓝星，快来参加令人热血澎湃的战斗吧！<br>
+      • 从蓝星收集碎片，赢得全新每日和每月奖励<br>
+      • 使用全新的货物中继站，进一步实现货运自动化<br>
+      • 加入了全新目标、进行模组微调、错误修正和其他改进 <br>
+      请前往<a href="http://blog.hadesstar.com/" class="linkstyle">blog.hadesstar.com</a>，参阅我们的博客（仅提供英文），了解更新详情</div>
+  </div>
+  <!-- Links -->
+  <div class="content">
+    <div class="baseline">
+      <div id="links"></div>
+    </div>
+    <div class="title">链接</div>
+    <div class="texts"> <a href="http://www.hadesstar.com/" class="linkstyle">Hades' Star 官方</a><br>
+      <a href="http://guidehs-ru.1gb.ru/" class="linkstyle">GuideHS_web（ru）</a><br>
+      <a href="https://hades-star.fandom.com/wiki/Hades%27_Star_Wiki" class="linkstyle">Hades' Star Wiki | FANDOM powered by Wikia</a><br>
+      <a href="https://github.com/wikihs/wikihs.github.io" class="linkstyle">帮我们改善这个页面</a><br>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+function show(){
+document.getElementById('sidemenu').style.visibility="visible";
+document.getElementById('hiddenlayer').style.visibility="visible";
+}
+function hide(obj){
+document.getElementById('hiddenlayer').style.visibility="hidden";
+document.getElementById('sidemenu').style.visibility="hidden";}
+</script> 
+<script type="text/javascript">
+var num0 = document.getElementById("sidefolder0");
+num0.style.display = "none";
+function dshow0() {
+if(num0.style.display == "block")
+num0.style.display = "none";
+else
+num0.style.display = "block";
+}
+var num1 = document.getElementById("sidefolder1");
+num1.style.display = "none";
+function dshow1() {
+if(num1.style.display == "block")
+num1.style.display = "none";
+else
+num1.style.display = "block";
+}
+var num2 = document.getElementById("sidefolder2");
+num2.style.display = "none";
+function dshow2() {
+if(num2.style.display == "block")
+num2.style.display = "none";
+else
+num2.style.display = "block";
+}
+var num3 = document.getElementById("sidefolder3");
+num3.style.display = "none";
+function dshow3() {
+if(num3.style.display == "block")
+num3.style.display = "none";
+else
+num3.style.display = "block";
+}
+var num4 = document.getElementById("sidefolder4");
+num4.style.display = "none";
+function dshow4() {
+if(num4.style.display == "block")
+num4.style.display = "none";
+else
+num4.style.display = "block";
+}
+var num5 = document.getElementById("sidefolder5");
+num5.style.display = "none";
+function dshow5() {
+if(num5.style.display == "block")
+num5.style.display = "none";
+else
+num5.style.display = "block";
+}
+var num6 = document.getElementById("sidefolder6");
+num4.style.display = "none";
+function dshow6() {
+if(num6.style.display == "block")
+num6.style.display = "none";
+else
+num6.style.display = "block";
+}
+var num7 = document.getElementById("sidefolder7");
+num7.style.display = "none";
+function dshow7() {
+if(num7.style.display == "block")
+num7.style.display = "none";
+else
+num7.style.display = "block";
+}
+var num8 = document.getElementById("sidefolder8");
+num8.style.display = "none";
+function dshow8() {
+if(num8.style.display == "block")
+num8.style.display = "none";
+else
+num8.style.display = "block";
+}
+var num9 = document.getElementById("sidefolder9");
+num4.style.display = "none";
+function dshow9() {
+if(num9.style.display == "block")
+num9.style.display = "none";
+else
+num9.style.display = "block";
+}
+var num10 = document.getElementById("sidefolder10");
+num10.style.display = "none";
+function dshow10() {
+if(num10.style.display == "block")
+num10.style.display = "none";
+else
+num10.style.display = "block";
+}
+var num11 = document.getElementById("sidefolder11");
+num11.style.display = "none";
+function dshow11() {
+if(num11.style.display == "block")
+num11.style.display = "none";
+else
+num11.style.display = "block";
+}
+var num12 = document.getElementById("sidefolder12");
+num12.style.display = "none";
+function dshow12() {
+if(num12.style.display == "block")
+num12.style.display = "none";
+else
+num12.style.display = "block";
+}
+var num13 = document.getElementById("sidefolder13");
+num13.style.display = "none";
+function dshow13() {
+if(num13.style.display == "block")
+num13.style.display = "none";
+else
+num13.style.display = "block";
+}
+var num14 = document.getElementById("sidefolder14");
+num14.style.display = "none";
+function dshow14() {
+if(num14.style.display == "block")
+num14.style.display = "none";
+else
+num14.style.display = "block";
+}
+var num15 = document.getElementById("sidefolder15");
+num15.style.display = "none";
+function dshow15() {
+if(num15.style.display == "block")
+num15.style.display = "none";
+else
+num15.style.display = "block";
+}
+var num16 = document.getElementById("sidefolder16");
+num16.style.display = "none";
+function dshow16() {
+if(num16.style.display == "block")
+num16.style.display = "none";
+else
+num16.style.display = "block";
+}
+var num17 = document.getElementById("sidefolder17");
+num17.style.display = "none";
+function dshow17() {
+if(num17.style.display == "block")
+num17.style.display = "none";
+else
+num17.style.display = "block";
+}
+//Google Analytics Stuff Because I don't know the practicability of this site.
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-122593809-2');
+</script>
+</body>
+</html>

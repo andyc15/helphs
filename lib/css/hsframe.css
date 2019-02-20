@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+/* Main components */
+/* Wrote by intds, feel free to insert into your own website */
+@font-face{
+    font-family:otherFont;
+    src:url("../font/RobotoCondensed-Regular.ttf")
+}
+.wrapper {
+	padding: 0;
+	background-color: #ffffff;
+	height: 100%;
+	font-family:otherfont,Helvetica;
+	color: #333333;
+	margin: 0;
+	z-index: -1;
+}
+/* Header parts */
+.header {
+	border-bottom: 1px solid #F0F0F0;
+	display: table;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #ffffff;
+}
+.headerlogo {
+	font-weight: bold;
+	padding: 1em;
+	display: table;
+}
+.headerinsert {
+
+	display: table-cell;
+	width: 27.5px;
+	padding: 0.5em;
+	cursor: pointer;
+}
+.headermenu {
+	background: url("../img/sidemenu.svg") no-repeat center center;
+	top: 0.45em;
+	right: 0.25em;
+	padding:1.25em;
+	cursor: pointer;
+	position: fixed;
+	z-index: 1;
+}
+/* Simple rules */
+.linkstyle {
+	color: #03dac6;
+	text-decoration: none;
+}
+/* Whats up JS */
+#sidemenu {
+	top: 0;
+	right: 0;
+	position: fixed;
+	width: 12.5em;
+	height: 100%;
+	background-color: #FFFFFF;
+	border-left: 1px solid #F0F0F0;
+	float: right;
+	visibility: hidden;
+	z-index: 2;
+}
+#hiddenlayer {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	cursor: default;
+	height: 100%;
+	visibility:hidden;
+	z-index: 0;
+}
+.sidemenutitle {
+	width: 100%;
+	padding: 1em;
+	font-weight: bold;
+	color: #03DAC6;
+	background-color: #FFFFFF;
+	position: fixed;
+}
+.sidelist {
+	overflow-y: scroll;
+	height: 100%;
+	overflow-x: hidden;
+}
+.sidemenublank {
+	padding: 1em;
+}
+#sidefolder0 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder1 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder2 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder3 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder4 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder5 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder6 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder7 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder8 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder9 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder10 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder11 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder12 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder13 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder14 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder15 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder16 {
+	padding-left: 1em;
+	display: none;
+}
+#sidefolder17 {
+	padding-left: 1em;
+	display: none;
+}
+/* Sidemenu */
+.sidemenulist {
+	padding: 0.5em 1em 0.5em 2em;
+	cursor: pointer;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+/* Finally the main content */
+.mainpage {
+	width: 100%;
+	overflow-x: hidden;
+}
+.content {
+	padding: 1.5em;
+	font-size: 0.9em;
+	letter-spacing: 0.75px;
+	line-height: 1.65;
+	
+}
+.imageholder {
+	width: 100%;
+	left: 0;
+}
+.image {
+	width: 100%;
+}
+/* Customized Parts for links */
+.title {
+	font-weight: bold;
+	padding: 1em 0 1em 0;
+	font-size: 0.95em;
+}
+.author {
+	font-size: 0.8em;
+	font-weight: 700;
+	padding: 0 0 1em 0;
+}
+.baseline {
+}
+.nicenter {
+	text-align: center;
+	color: #018786;
+	font-weight: 900;
+	font-size: 0.9em;
+	padding: 0.5em;
+}
+.lrholder {
+	margin-top: 1em;
+	height: 43.3px;
+	padding-bottom: 1em;
+}
+.lpic {
+	float: left;
+}
+.rintro {
+	float: left;
+	height: 43.3px;
+	margin-top: 0px;
+	margin-left: 1em;
+}
+.slide-box{
+	display: -webkit-box;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	border: 1px solid #f0f0f0;
+	margin-top: 1em;
+}
+.slide-item{
+}
+.table {  
+	border-collapse: collapse; 
+	text-align: center;
+	white-space: nowrap;
+	border-color: #f0f0f0;
+	cellpadding:5em;
+	cellspacing:5em;
+	font-size: 0.85em;
+} 
+.comment {
+	margin: 1em 0 1em 0;
+	padding: 0.5em;
+	font-size: 0.75em;
+	background-color: #f0f0f0;
+}
